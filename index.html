@@ -103,6 +103,36 @@
             border-radius: 5px;
         }
 
+        /* Credentials Section */
+        #credentials .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .credential {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .credential a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .credential a:hover {
+            background: #555;
+        }
+
         /* Footer Styles */
         footer {
             background: #333;
@@ -122,6 +152,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#credentials">Credentials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -178,6 +209,28 @@
                 </ul>
             </div>
         </section>
+        <section id="credentials">
+            <div class="container">
+                <h2>Credentials</h2>
+                <div class="grid">
+                    <div class="credential">
+                        <h3>Google Digital Marketing & E-commerce Certificate</h3>
+                        <a href="https://drive.google.com/file/d/17jnwQ7htB93ulGRuVteehpEbMJy8gpvi/view?usp=sharing" target="_blank">View Certificate</a>
+                        <a href="https://drive.google.com/uc?export=download&id=17jnwQ7htB93ulGRuVteehpEbMJy8gpvi" download>Download Certificate</a>
+                    </div>                    
+                    <div class="credential">
+                        <h3>Udacity Data Analysis Nanodegree</h3>
+                        <a href="https://drive.google.com/file/d/1Y6QzpqpA7ALzBQqGoqYipOPyV4PFFtcy/view?usp=sharing" target="_blank">View Certificate</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1Y6QzpqpA7ALzBQqGoqYipOPyV4PFFtcy" download>Download Certificate</a>
+                    </div> 
+                    <div class="credential">
+                        <h3>Bachelor of Software Engineering</h3>
+                        <a href="https://drive.google.com/file/d/1ieLLYIitbEY6tpLJpI6Y6kOMys1pMev7/view?usp=sharing" target="_blank">View Certificate</a>
+                        <a href="https://drive.google.com/uc?export=download&id=1ieLLYIitbEY6tpLJpI6Y6kOMys1pMev7" download>Download Certificate</a>
+                    </div>                                       
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
@@ -191,8 +244,5 @@
             <p>© 2024 Nahom Fereja. All Rights Reserved.</p>
         </div>
     </footer>
-    <script>
-        console.log("Welcome to Nahom Fereja's Portfolio Website");
-    </script>
 </body>
 </html>
