@@ -34,16 +34,21 @@
             font-size: 2.5rem;
         }
 
+        header p {
+            margin: 0.5rem 0;
+        }
+
         header nav ul {
             list-style: none;
             padding: 0;
             display: flex;
             justify-content: center;
             margin-top: 1rem;
+            flex-wrap: wrap;
         }
 
         header nav ul li {
-            margin: 0 1rem;
+            margin: 0.5rem;
         }
 
         header nav ul li a {
@@ -66,21 +71,23 @@
             background: #f4f4f4;
         }
 
-        #experience .grid {
+        #experience .grid,
+        #credentials .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 1.5rem;
         }
 
-        .card {
+        .card, .credential {
             background: #fff;
             border: 1px solid #ddd;
             padding: 1.5rem;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        .card h3 {
+        .card h3, .credential h3 {
             margin-top: 0;
             font-size: 1.4rem;
             color: #444;
@@ -103,22 +110,7 @@
             border-radius: 5px;
         }
 
-        /* Credentials Section */
-        #credentials .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .credential {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 1.5rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
+        /* Links in Credentials */
         .credential a {
             display: inline-block;
             margin-top: 1rem;
@@ -139,6 +131,45 @@
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .skills-list li {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .skills-list li {
+                font-size: 0.8rem;
+            }
+
+            .card h3, .credential h3 {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
