@@ -13,6 +13,7 @@
             padding: 0;
             color: #333;
             line-height: 1.6;
+            background: linear-gradient(180deg, #f9f9f9, #e0f7fa);
         }
 
         .container {
@@ -23,24 +24,25 @@
 
         /* Header Styles */
         header {
-            background: linear-gradient(135deg, #444, #222);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #fff;
             padding: 1.5rem 0;
             text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.8rem;
+            letter-spacing: 1px;
         }
 
         header p {
             margin: 0.5rem 0;
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
         header nav ul {
@@ -69,14 +71,20 @@
 
         header nav ul li a:hover {
             background: #fff;
-            color: #444;
+            color: #6a11cb;
             border-color: #fff;
         }
 
         /* Section Styles */
         section {
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.2rem;
+            color: #2575fc;
+            margin-bottom: 1rem;
         }
 
         #about {
@@ -98,11 +106,12 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
         }
 
         .card:hover, .credential:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
         }
 
         .card h3, .credential h3 {
@@ -121,7 +130,7 @@
         }
 
         .skills-list li {
-            background: #444;
+            background: #2575fc;
             color: #fff;
             margin: 0.5rem;
             padding: 0.5rem 1rem;
@@ -130,7 +139,7 @@
         }
 
         .skills-list li:hover {
-            background: #666;
+            background: #6a11cb;
         }
 
         /* Links in Credentials */
@@ -138,7 +147,7 @@
             display: inline-block;
             margin-top: 1rem;
             padding: 0.5rem 1rem;
-            background: #444;
+            background: #2575fc;
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
@@ -146,7 +155,7 @@
         }
 
         .credential a:hover {
-            background: #555;
+            background: #6a11cb;
         }
 
         /* Footer Styles */
@@ -157,10 +166,19 @@
             text-align: center;
         }
 
+        footer a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.3rem;
             }
 
             .skills-list li {
@@ -181,7 +199,7 @@
 
         @media (max-width: 480px) {
             header h1 {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .container {
@@ -202,7 +220,7 @@
     <header>
         <div class="container">
             <h1>Nahom Fereja</h1>
-            <p>Digital Marketing Specialist & Data Analyst</p>
+            <p>🌟 Digital Marketing Specialist & Data Analyst 🌟</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -228,22 +246,22 @@
                 <h2>Work Experience</h2>
                 <div class="grid">
                     <div class="card">
-                        <h3>Digital Marketer</h3>
+                        <h3>🚀 Digital Marketer</h3>
                         <p><strong>Oct 2024 - Present | 2F Capital | Ethiopia</strong></p>
                         <p>Developed and executed data-driven marketing campaigns, boosting brand visibility and engagement while optimizing performance metrics.</p>
                     </div>
                     <div class="card">
-                        <h3>Digital Marketer</h3>
+                        <h3>📈 Digital Marketer</h3>
                         <p><strong>Feb 2021 - July 2024 | Campus Handout | Ethiopia</strong></p>
                         <p>Grew a YouTube channel to 54,300 subscribers and increased Telegram followers to 43,200 through content strategy, SEO, and targeted campaigns.</p>
                     </div>
                     <div class="card">
-                        <h3>WordPress Developer & Instructor</h3>
+                        <h3>💻 WordPress Developer & Instructor</h3>
                         <p><strong>Nov 2023 - July 2024 | Campus Handout | Ethiopia</strong></p>
                         <p>Developed an e-learning WordPress website and instructed students on advanced WordPress customization techniques.</p>
                     </div>
                     <div class="card">
-                        <h3>Video Editor</h3>
+                        <h3>🎬 Video Editor</h3>
                         <p><strong>2023 | Freelance | Upwork</strong></p>
                         <p>Collaborated with clients to deliver high-quality, tailored video edits on time, meeting diverse project needs.</p>
                     </div>
@@ -284,7 +302,6 @@
                         <a href="https://drive.google.com/file/d/1ieLLYIitbEY6tpLJpI6Y6kOMys1pMev7/view?usp=sharing" target="_blank">View Certificate</a>
                         <a href="https://drive.google.com/uc?export=download&id=1ieLLYIitbEY6tpLJpI6Y6kOMys1pMev7" download>Download Certificate</a>
                     </div>                                       
-                </div>
                 </div>
             </div>
         </section>
